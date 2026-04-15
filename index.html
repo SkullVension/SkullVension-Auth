@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skull Auth | Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-sphere"></div>
+
+    <div class="auth-card">
+        <div class="scanner-line"></div>
+        
+        <div id="step-0" class="content-box fade-in">
+            <div class="brand">
+                <span class="logo-icon">✦</span>
+                <h2>SKULLVENSION<span>GATEWAY</span></h2>
+            </div>
+            <p class="desc">Select your preferred verification method.</p>
+            
+            <div class="choice-container">
+                <button class="choice-card" onclick="showInput('Email')">
+                    <span class="icon">✉</span>
+                    <div class="text">
+                        <span class="title">Verify via Email</span>
+                        <span class="sub">Fast & Secure</span>
+                    </div>
+                </button>
+
+                <button class="choice-card" onclick="showInput('Phone Number')">
+                    <span class="icon">📱</span>
+                    <div class="text">
+                        <span class="title">Verify via Phone</span>
+                        <span class="sub">SMS Gateway</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="step-1" class="content-box" style="display: none;">
+            <h2 class="neon-text">Identity Portal</h2>
+            <p id="input-desc" class="desc">Please provide your details.</p>
+            
+            <div class="input-wrapper">
+                <input type="text" id="user-input" placeholder="..." spellcheck="false">
+                <label id="input-label">Credentials</label>
+            </div>
+            
+            <button class="btn-primary" onclick="handleSend()">INITIALIZE OTP</button>
+        </div>
+
+        <div id="step-2" class="content-box" style="display: none;">
+            <h2 class="cyan-title">Security Check</h2>
+            <p id="sent-text" class="status-msg"></p>
+            
+            <div class="otp-field">
+                <input type="text" id="otp-input" placeholder="000000" maxlength="6">
+            </div>
+            
+            <button class="btn-cyan" onclick="handleVerify()">CONFIRM IDENTITY</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
