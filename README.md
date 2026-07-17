@@ -29,7 +29,8 @@
 ## 🛠️ Installation
 
  Clone it
-git clone https://github.com/Mr-Vihan/SkullVension-auth.git
+git clone https://github.com/Mr-SkullVension/SkullVension-auth.git
 
  Enter the directory
 cd SkullVension-Auth
+
