@@ -5,7 +5,6 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-white?style=for-the-badge)
 
 **SkullVension Auth** is a luxury, glassmorphic authentication interface designed for the SkullVension Empire. It features an obsidian-gold aesthetic, liquid metal gradients, and high-end animations built with zero dependencies.
-
 ---
 
 ## ⚠️ CRITICAL DISCLAIMER (READ THIS)
